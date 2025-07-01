@@ -1,0 +1,30 @@
+@import '../../styles/mixins';
+
+.show_more_cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .show_more{
+        @include subtitle2();
+        width: 169px;
+        height: 40px;
+        border: 1px solid rgb(204, 150, 0);
+        border-radius: 10px;
+        margin-top: 68px;
+        margin-bottom: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(254, 254, 254);
+        cursor: pointer;
+        .light & {
+            background-color: rgb(255, 255, 255);
+            color: rgb(51, 51, 51);
+        }
+
+        .dark & {
+            background-color: rgb(51, 51, 51);
+            color: rgb(240, 240, 240);
+        }    
+    }            
+}

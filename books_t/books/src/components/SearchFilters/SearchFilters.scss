@@ -1,0 +1,113 @@
+@import '../../styles/mixins';
+
+.search_cont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 37px;
+        .search_name{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            width: 829px;
+            height: 51px;
+            gap: 380px;
+            @include border();
+            @media (max-width:390px){
+                flex-direction: column;
+                justify-content: center;
+                width: 340px;
+                height: 100px;
+                gap: 17px;
+                border: none;
+            }   
+            .search_inp{
+                border: none;
+                width: 250px;
+                height: 30px;
+                background-color: rgb(75, 51, 11, 0);
+                cursor: pointer;
+                color: rgb(255, 255, 255);
+                padding-left: 10px;
+                @media (max-width:390px){
+                    @include border();
+                    padding-left: 7px;
+                    width: 340px;
+                    height: 51px;
+                }   
+            }
+            .search_inp::placeholder{
+                @include placeholder();
+            }
+            .search_btn{
+                color: rgb(255, 255, 255);
+                background-color: rgb(75, 51, 11);
+                border: none;
+                border-radius: 10px;
+                width: 139px;
+                height: 36px;
+                @include subtitle2();
+                cursor: pointer;
+                @media (max-width:390px){
+                    width: 340px;
+                    border-radius: 5px;
+                }  
+            }
+        }
+        .wrongInp{
+            color: rgb(255, 0, 0);
+            @include subtitleBook();
+            display: block;
+            left: 310px;
+            top: 373px;
+            position: absolute;
+            @media (max-width:390px){
+                margin-right: 120px;
+                margin-top: -87px;
+            }  
+        }
+        .search_subcont{
+            display: flex;
+            width: 829px;
+            justify-content: space-around;
+            gap: 257px;
+            color: white;
+            @media (max-width:390px){
+                flex-direction: column;
+                justify-content: center;
+                gap: 38px;
+                width: 340px;
+            } 
+            .search_wrapper{
+                display: flex;
+                flex-direction: column;
+                .search_placeholder{
+                   @include placeholder(); 
+                }
+                .search_sort{
+                    @include sort();
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+                    gap: 130px;
+                    @media (max-width:390px){
+                        width: 340px;
+                        gap: 160px;
+                    } 
+                    .search_sort_title{
+                        padding-bottom: 3px;
+                    }
+                    .search_sort_chevrone{
+                        cursor: pointer;
+                    }
+                }
+                #search_sort_all{
+                    @media (max-width:390px){
+                        gap: 215px;
+                    } 
+                }
+            }
+        }
+    }

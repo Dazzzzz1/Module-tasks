@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "jsx": "preserve",
+    
+    "module": "esnext",
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "paths": {
+      "#*": ["./src/*"],
+      "#LoadMore": ["./src/components/LoadMore/LoadMore"],
+      "#NotFoundPage": ["./src/pages/NotFoundPage/NotFoundPage"],
+      "#DetailedPage": ["./src/pages/DetailedPage/DetailedPage"],
+      "#MainPage": ["./src/pages/MainPage/MainPage"],
+      "#SingleBook": ["./src/components/SingleBook/SingleBook"],
+      "#BookList": ["./src/components/BookList/BookList"],
+      "#SearchFilters": ["./src/components/SearchFilters/SearchFilters",],
+      "#Spinner": ["./src/components/Spinner/Spinner"],
+      "#Footer": ["./src/components/Footer/Footer"],
+      "#Header": ["./src/components/Header/Header"],
+      "#ThemeProvider": ["./src/context/ThemeContext"],
+      "#imgs/*": ["./src/img/*"]
+    },
+    "resolveJsonModule": true,
+    "allowJs": true,
+    
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    
+    "noEmit": true,
+    "isolatedModules": true,
+    "skipLibCheck": true
+  },
+  "include": ["src","declarations.d.ts"],
+  "exclude": ["node_modules"]
+}

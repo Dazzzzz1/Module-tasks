@@ -1,0 +1,92 @@
+@mixin gradient{
+    background: radial-gradient(50% 50% at 50% 50%, #CC9600 0%, #FF7700 100%);
+    -webkit-background-clip: text; 
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@mixin logo{
+    font-family: 'Inter';    
+    font-weight: 700;
+    font-size: 28px;
+}
+@mixin title{
+    font-family: 'Inter';    
+    font-weight: 700;
+    font-size: 48px;
+}
+@mixin title2{
+    font-family: 'Inter';    
+    font-weight: 700;
+    font-size: 32px;
+}
+@mixin title3{
+    font-family: 'Inter';    
+    font-weight: 700;
+    font-size: 20px;
+}
+@mixin subtitle{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+}
+@mixin subtitle2{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+}
+@mixin subtitle3{
+    font-family: 'Inter';    
+    font-weight: 700;
+    font-size: 24px;
+}
+@mixin subtitle4{
+    font-family: 'Inter';    
+    font-weight: 700;
+    font-size: 18px;
+}
+@mixin subtitle5{
+    font-family: 'Inter';    
+    font-weight: 700;
+    font-size: 16px;
+}
+@mixin subtitle6{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 24px;
+}
+@mixin placeholder{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    color: rgb(165, 159, 159);
+}
+@mixin border{
+    border: 1px solid rgb(204, 150, 0);
+    border-radius: 10px;
+}
+@mixin sort{
+    @include border();
+    width: 286px;
+    height: 51px;
+    color: rgb(165, 159, 159);
+}
+@mixin categoryBook{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+}
+@mixin titleBook{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+}
+@mixin subtitleBook{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+}
+@mixin authorBook{
+     font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+}
